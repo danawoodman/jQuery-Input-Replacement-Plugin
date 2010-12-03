@@ -25,7 +25,6 @@ To see what the plugin can do, check out [this short screencast](http://content.
 
 Put this in the `<head>` of your document:
 
-    :::js
     <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
     <script type="text/javascript" src="js/jquery.input_replacement.pack.js"></script>
     
@@ -41,7 +40,6 @@ Put this in the `<head>` of your document:
 
 ... and put this in the `<body>` of your page.
 
-    :::html
     <form action="#" method="post">
         <p>
             <label for="id_search">Search</label>
