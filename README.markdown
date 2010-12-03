@@ -50,11 +50,23 @@ Put this in the `<head>` of your document:
         </p>
     </form>
 
+
 ### Applying to all inputs on a page
 
 You could apply this to all input fields on a page like so:
 
     $('input').input_replacement();
+
+
+### Defining custom options
+
+    $('#id_search').input_replacement({
+        text: 'Type your search...',
+        prefocus_class: 'prefocus'
+    });
+
+This will make the placholder text "Type your search" and will apply a class of `prefocus` to the input field so you can style it.
+
     
 ### More examples
 
