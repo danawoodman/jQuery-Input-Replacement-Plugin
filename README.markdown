@@ -6,7 +6,7 @@ The *jQuery Input Replacement plugin* allows you to easily create default placeh
 
 You often see this behavior in search fields or email forms where the field contains some placeholder text (such as "Search...") to give users a hint to what the field does. This is often used when a field has no visible `<label>` to indicate the expected values of a field.
     
-To see what the plugin can do, check out [this short screencast](http://content.screencast.com/users/woodman.dana/folders/Jing/media/485a2c24-b22d-4c15-97b3-2e95e0c1584a/jingh264player.swf).
+To see what the plugin can do, check out [this short screencast](http://www.screencast.com/t/mjDEnvFA).
 
 
 ## Features
