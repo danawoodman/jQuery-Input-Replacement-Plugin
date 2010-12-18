@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"xml:lang="en" lang="en">
+    <head>
+        
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        
+        <title></title>
+        
+        <!-- META tags -->
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        
+        <!-- Stylesheets -->
+        <style type="text/css" media="screen">
+            
+            /* Demo styles */
+            body {
+                font: 14px "Helvetica Neue",Helvetica,Arial,sans-serif;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            code {
+                background: #BAE7F2;
+                font-family: monospace;
+            }
+            pre {
+                background: #BAE7F2;
+                font-family: monospace;
+                margin: 15px 0;
+                padding: 15px 30px;
+            }
+            #container {
+                margin: 30px auto;
+                text-align: left;
+                width: 600px;
+            }
+            h3 {
+                border-bottom: 1px solid #E4E4E4;
+                font-size: 20px;
+                font-weight: normal;
+                margin-top: 40px;
+                padding-bottom: 3px;
+            }
+            
+            /* Prefocus class styling */
+            .prefocus {
+                color: #ccc;
+                font-style: italic;
+            }
+            
+        </style>
+        
+        <!-- JavaScript -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.input_replacement.js"></script>
+        <script type="text/javascript">
+        
+            $(function() {
+            
+            
+                $('#form').submit(function() {
+                    alert($('#id_name').val());
+                    return false;
+                })
+                
+                
+                // Example 1: No options set.
+                $('#example1').input_replacement();
+                
+                // Example 2: prefocus_class set.
+                $('#example2').input_replacement({
+                    prefocus_class: "prefocus"
+                });
+                
+                // Example 3: prefocus_class and default text set.
+                $('#example3').input_replacement({
+                    text: "Default text...",
+                    prefocus_class: "prefocus"
+                });
+                
+                // Example 4: Field has <code>value="Foobar"</code> set.
+                $('#example4').input_replacement({
+                    text: "Default text...",
+                    prefocus_class: "prefocus"
+                });
+                
+            });
+        
+        </script>
+    
+    </head>
+    <body>
+    
+        <div id="container">
+            
+            <form action="#" method="post" if="form">
+                
+                <h1><a href="https://github.com/danawoodman/jQuery-Input-Replacement-Plugin" title="Check out the plugin">jQuery Input Replacement Plugin</a> Demos</h1>
+                
+                <!-- Example 1: No options. -->
+                <h3><strong>Example 1:</strong> No options set</h3>
+                <p>
+                    <label for="example1">Name</label>
+                    <input type="text" name="Name" id="example1" />
+                </p>
+
+<pre><code>$('#example1').input_replacement();</code></pre>
+
+                <!-- Example 2: prefocus_class set. -->
+                <h3><strong>Example 2:</strong> <code>prefocus_class</code> set</h3>
+                <p>
+                    <label for="example2">Name</label>
+                    <input type="text" name="Name" id="example2" />
+                </p>
+<pre><code>$('#example2').input_replacement({
+    prefocus_class: "prefocus"
+});</code></pre>
+
+                <!-- Example 3: prefocus_class and default text set. -->
+                <h3><strong>Example 3:</strong> <code>prefocus_class</code> and default <code>text</code> set</h3>
+                <p>
+                    <label for="example3">Name</label>
+                    <input type="text" name="Name" id="example3" />
+                </p>
+<pre><code>$('#example3').input_replacement({
+    text: "Default text...",
+    prefocus_class: "prefocus"
+});</code></pre>
+
+                <!-- Example 4: Field has <code>value="Foobar"</code> set. -->
+                <h3><strong>Example 4:</strong> Field has <code>value="Foobar"</code> set</h3>
+                <p>
+                    <label for="example4">Name</label>
+                    <input type="text" name="Name" id="example4" value="Foobar" />
+                </p>
+<pre><code>$('#example4').input_replacement({
+    text: "Default text...",
+    prefocus_class: "prefocus"
+});</code></pre>
+
+            </form>
+            
+        </div>
+    
+    </body>
+</html>
