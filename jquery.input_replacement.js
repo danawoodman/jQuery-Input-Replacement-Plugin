@@ -92,7 +92,7 @@
                     form.each(function() {
                         $(form).bind('submit', function() {
                             if (obj.val() == obj.o.field_text) {
-                                obj.val() = '';
+                                obj.val('');
                             };
                         });
                     });
